@@ -1,6 +1,6 @@
 {
   "name": "turbo-list",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A high-performance virtualized list for React Native, optimized for smooth scrolling and low memory usage.",
   "main": "src/index.ts",
   "scripts": {
