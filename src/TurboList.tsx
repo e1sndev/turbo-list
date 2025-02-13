@@ -14,6 +14,8 @@ const TurboList = <T,>({
   estimatedItemSize,
   numColumns = 1,
   renderItem,
+  style,
+  contentContainerStyle,
 }: TurboListProps<T>) => {
   const { height } = useWindowDimensions();
 
@@ -77,7 +79,11 @@ const TurboList = <T,>({
   ]);
 
   return (
-    <ScrollView onScroll={scrollHandler}>
+    <ScrollView
+      onScroll={scrollHandler}
+      style={style}
+      contentContainerStyle={contentContainerStyle}
+    >
       <View style={{ height: itemsContainerHeight, position: "relative" }}>
         {renderedItems}
       </View>
