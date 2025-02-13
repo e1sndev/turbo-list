@@ -6,7 +6,7 @@ import {
   useWindowDimensions,
   View,
 } from "react-native";
-import { TurboListProps } from "./types/TurboListProps";
+import { TurboListProps } from "./types";
 
 const TurboList = <T,>({
   data,
