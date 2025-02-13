@@ -14,8 +14,8 @@ const TurboList = <T,>({
   estimatedItemSize,
   numColumns = 1,
   renderItem,
-  style,
-  contentContainerStyle,
+  onScroll,
+  ...props
 }: TurboListProps<T>) => {
   const { height } = useWindowDimensions();
 
@@ -42,8 +42,10 @@ const TurboList = <T,>({
         start: startIdx,
         end: endIdx,
       });
+
+      onScroll?.(event);
     },
-    [visibleItemsCount, data.length, estimatedItemSize, numColumns]
+    [visibleItemsCount, data.length, estimatedItemSize, numColumns, onScroll]
   );
 
   const itemsContainerHeight = useMemo(() => {
@@ -79,11 +81,7 @@ const TurboList = <T,>({
   ]);
 
   return (
-    <ScrollView
-      onScroll={scrollHandler}
-      style={style}
-      contentContainerStyle={contentContainerStyle}
-    >
+    <ScrollView {...props} onScroll={scrollHandler}>
       <View style={{ height: itemsContainerHeight, position: "relative" }}>
         {renderedItems}
       </View>
