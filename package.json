@@ -6,8 +6,31 @@
   "scripts": {
     "build": "tsc --outDir dist"
   },
+  "keywords": [
+    "react-native",
+    "turbo-list",
+    "turbilist",
+    "flatlist-alternative",
+    "flatlist",
+    "60fps",
+    "performance",
+    "smooth-scrolling",
+    "virtualized-list"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/e1sndev/turbo-list"
+  },
+  "bugs": {
+    "url": "https://github.com/e1sndev/turbo-list/issues"
+  },
+  "homepage": "https://github.com/e1sndev/turbo-list",
   "author": "Elshen <dev.e1sn@gmail.com>",
   "license": "MIT",
+  "peerDependencies": {
+    "react": ">= 15.2.1",
+    "react-native": ">= 0.30.0"
+  },
   "devDependencies": {
     "@types/react": "^19.0.8",
     "@types/react-native": "^0.73.0",
