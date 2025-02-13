@@ -1,0 +1,16 @@
+{
+  "name": "turbo-list",
+  "version": "0.0.1",
+  "description": "A high-performance virtualized list for React Native, optimized for smooth scrolling and low memory usage.",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc --outDir dist"
+  },
+  "author": "Elshen <dev.e1sn@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^19.0.8",
+    "@types/react-native": "^0.73.0",
+    "typescript": "^5.7.3"
+  }
+}
